@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://osakemon.github.io/osakemon/sitemap.xml
+Sitemap: https://osakemon.github.io/osakemon//sitemap.xml
