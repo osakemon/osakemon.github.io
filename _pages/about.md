@@ -22,7 +22,8 @@ social: true  # includes social icons at the bottom of the page
 Howdy! I am a first-year PhD student at Weill Cornell Medicine & Houston Methodist. 
 
 Previously, I was a master's student at Graduate School of Biostudies, Kyoto University, where I worked on active inference, advised by Naoki Honada. Prior to joining KU, I obtained my bachelor's degree in Computer Science from Nanjing University of Posts and Telecommunications (NUPT). 
-[//]: # (then spent a wonderful year as a researcher with Miguel Hernán in the Program for Causal Inference (now CAUSALab) at the Harvard School of Public Health)
+
+[//]: # (then spent a wonderful year as a researcher with Miguel Hernán in the Program for Causal Inference at the Harvard School of Public Health)
 
 Test. Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
