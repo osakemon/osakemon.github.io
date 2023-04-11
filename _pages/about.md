@@ -19,6 +19,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
+Howdy! I am a first-year PhD student at Weill Cornell Medicine & Houston Methodist. 
+
+Previously, I was a master's student at Graduate School of Biostudies, Kyoto University, where I worked on active inference, advised by Naoki Honada. Prior to joining KU, I obtained my bachelor's degree in Computer Science from Nanjing University of Posts and Telecommunications (NUPT). 
+[//]: # (then spent a wonderful year as a researcher with Miguel Hernán in the Program for Causal Inference (now CAUSALab) at the Harvard School of Public Health)
+
 Test. Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
