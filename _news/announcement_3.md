@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Excited our work is out at Nat Biotechnol! Compute RNA velocity with your single cell RNA-seq data using our pipeline cellDancer. Examples can be found: [cellDancer](https://guangyuwanglab2021.github.io/cellDancer_website/)
