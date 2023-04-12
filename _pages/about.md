@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://weill.cornell.edu'>Weill Cornell Medicine</a> & Houston Methodist
+subtitle: <a href='https://weill.cornell.edu'>Weill Cornell Medicine</a> & <a href='https://www.houstonmethodist.org'>Houston Methodist</a>, Houston, Texas, United States
 profile:
   align: right
   image: prof_pic.jpg
