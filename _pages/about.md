@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Howdy! I am a first-year PhD student at [Weill Cornell Medicine](https://weill.cornell.edu) & visiting graduate research fellow at [Houston Methodist](https://www.houstonmethodist.org). 
+Howdy! I am a first-year PhD student at [Weill Cornell Medicine](https://weill.cornell.edu) & visiting graduate research fellow at [Houston Methodist](https://www.houstonmethodist.org). I am broadly interested in problems at the intersection of single-cell dynamics and machine learning, particularly in RNA velocity.
 
 Previously, I was a master's student at [Graduate School of Biostudies](https://www.lif.kyoto-u.ac.jp/e/) (SGU Program), [Kyoto University](https://www.kyoto-u.ac.jp/en), where I worked on Active Inference, advised by [Naoki Honada](https://sites.google.com/view/data-driven-biology/). Prior to joining KU, I obtained my bachelor's degree in Computer Science from [Nanjing University of Posts and Telecommunications](https://www.njupt.edu.cn/en/) (NUPT). 
 
