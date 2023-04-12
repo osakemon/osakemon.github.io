@@ -13,7 +13,7 @@ profile:
 news: true  # includes a list of news items
 latest_posts: false # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 Howdy! I am a first-year PhD student at [Weill Cornell Medicine](https://weill.cornell.edu) & visiting graduate research fellow at [Houston Methodist](https://www.houstonmethodist.org). I am broadly interested in problems at the intersection of single-cell dynamics and machine learning, particularly in RNA velocity.
