@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-04-03
+date: 2024-05-22
 inline: true
 related_posts: false
 ---
 
-Excited our work is out at Nature Biotechnology! Compute RNA velocity with your single cell RNA-seq data using our pipeline [cellDancer](https://guangyuwanglab2021.github.io/cellDancer_website/).
+I present (poster) our work aboout "Multimodal Integration of Medical Imaging and Omics Data Using Foundation Models" on the 8th Annual Cardiovascular Bioengineering Symposium.
