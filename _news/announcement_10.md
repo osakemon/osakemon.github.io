@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our collaboration paper "Lymphatic endothelial mTORC1 instructs metabolic and developmental signaling during lymphangiogenesis" has been pubulished in **Developmental Cell**! Check the full paper here[https://www.cell.com/developmental-cell/fulltext/S1534-5807(25)00250-3]
+Our collaboration paper "Lymphatic endothelial mTORC1 instructs metabolic and developmental signaling during lymphangiogenesis" has been pubulished in **Developmental Cell**! Check the full paper [here](https://www.cell.com/developmental-cell/fulltext/S1534-5807(25)00250-3)
