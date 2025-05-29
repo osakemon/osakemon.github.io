@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I present our work aboout "Multimodal Integration of Medical Imaging and Omics Data Using Foundation Models" at RNA Nanotherapeutic Meeting!
+I present our work aboout "Multimodal Integration of Medical Imaging and Omics Data Using Foundation Models" at **Hosuton Methodist RNA Nanotherapeutic Meeting**!

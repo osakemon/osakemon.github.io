@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I present (poster) our work aboout "Multimodal Integration of Medical Imaging and Omics Data Using Foundation Models" on the 8th Annual Cardiovascular Bioengineering Symposium.
+I present our work (poster) aboout "Multimodal Integration of Medical Imaging and Omics Data Using Foundation Models" on the **8th Annual Cardiovascular Bioengineering Symposium**.
