@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-05-07
+date: 2025-10-21
 inline: true
 related_posts: false
 ---
 
-Our collaboration paper "Lymphatic endothelial mTORC1 instructs metabolic and developmental signaling during lymphangiogenesis" has been pubulished in **Developmental Cell**! Check the full paper [here](https://www.cell.com/developmental-cell/fulltext/S1534-5807(25)00250-3)
+Our collaboration paper "APOA1 binding protein promotes lymphatic cell fate and lymphangiogenesis by relieving caveolae-mediated inhibition of VEGFR3 signaling" has been pubulished in **Nature Communications **! Check the full paper [here](https://www.nature.com/articles/s41467-025-60611-w)
