@@ -7,8 +7,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: 
-    <p>Year of the Rabbit🐰!</p>
+  address:
 
 news: true  # includes a list of news items
 latest_posts: false # includes a list of the newest posts
@@ -16,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-Howdy! I am a forth-year PhD candidate at [Weill Cornell Medicine](https://weill.cornell.edu) & visiting graduate research fellow at [Houston Methodist](https://www.houstonmethodist.org), advised by [Dr. Guangyu Wang](https://guangyuwanglab.github.io/web/). I am broadly interested in data-driven research powered by artificial intelligence (AI) and machine learning that guide us to understand more about biological systems and processe.
+Howdy! I am a fourth-year PhD candidate at [Weill Cornell Medicine](https://weill.cornell.edu) & visiting graduate research fellow at [Houston Methodist](https://www.houstonmethodist.org), advised by [Dr. Guangyu Wang](https://guangyuwanglab.github.io/web/). I am broadly interested in data-driven research powered by artificial intelligence (AI) and machine learning that guide us to understand more about biological systems and processes.
 
 Previously, I was a master's student at [Graduate School of Biostudies](https://www.lif.kyoto-u.ac.jp/e/) (SGU Program), [Kyoto University](https://www.kyoto-u.ac.jp/en), where I worked on Active Inference, advised by [Dr. Naoki Honda](https://sites.google.com/view/data-driven-biology/). Prior to joining KU, I obtained my bachelor's degree in Computer Science from [Nanjing University of Posts and Telecommunications](https://www.njupt.edu.cn/en/). 
 

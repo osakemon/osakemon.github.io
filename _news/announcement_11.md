@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My co-first author paper “Thor: a platform for cell-level investigation of spatial transcriptomics and histology” has been accetped in principle in **Nature Communication**!
+My co-first author paper “Thor: a platform for cell-level investigation of spatial transcriptomics and histology” has been accepted in principle in **Nature Communications**!
