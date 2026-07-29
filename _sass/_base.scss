@@ -521,9 +521,11 @@ footer.sticky-bottom {
           }
         }
 
+        // The site owner's own name, marked up as <em> by _layouts/bib.html.
+        // Bold rather than underlined -- an underline reads as a link.
         >em {
-          border-bottom: 1px solid;
           font-style: normal;
+          font-weight: bold;
         }
 
         >span.more-authors {

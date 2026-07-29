@@ -15,16 +15,23 @@
 
     <!-- Styles -->
     {%- comment -%}
-      No favicon unless `icon` is set in _config.yml. Guarding on blank first
-      matters: `site.icon.size` is 0 when unset, so the original `size <= 4`
-      test passed and emitted an SVG favicon containing no glyph.
+      Favicon. Guarding on blank first matters: `site.icon.size` is 0 when
+      unset, so the original `size <= 4` test passed and emitted an SVG
+      favicon containing no glyph.
+
+      When no icon is configured we still emit an empty `data:` icon rather
+      than nothing at all. Browsers cache favicons hard and keep showing the
+      last one they saw, so simply dropping the tag leaves earlier visitors
+      looking at the old emoji; pointing at an empty icon overrides it.
     {%- endcomment -%}
     {% if site.icon != blank %}
       {% if site.icon.size <= 4 %}
-    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
       {% else %}
-    <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url}}"/>
+    <link rel="icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url}}"/>
       {% endif %}
+    {% else %}
+    <link rel="icon" href="data:,">
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
