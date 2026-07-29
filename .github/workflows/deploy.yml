@@ -18,8 +18,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+    # v5 is the release that moved to the Node 24 runtime; v4 still ran on the
+    # deprecated Node 20. v6/v7 exist but only change credential handling and
+    # fork-PR hardening, neither of which affects a plain checkout.
     - name: Checkout 🛎️
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
