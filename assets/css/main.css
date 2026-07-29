@@ -489,8 +489,8 @@ footer.sticky-bottom {
   text-decoration: none;
 }
 .publications ol.bibliography li .author > em {
-  border-bottom: 1px solid;
   font-style: normal;
+  font-weight: bold;
 }
 .publications ol.bibliography li .author > span.more-authors {
   color: var(--global-text-color-light);
