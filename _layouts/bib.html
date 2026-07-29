@@ -1,6 +1,10 @@
 ---
 ---
 <!-- _layouts/bib.html -->
+<!-- `site.data.venues` (abbr -> url/color) and `site.data.coauthors`
+     (surname -> homepage) are optional; neither file exists right now, so
+     venue badges render plain and author names render unlinked. -->
+
       <div class="row">
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}

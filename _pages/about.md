@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://weill.cornell.edu'>Weill Cornell Medicine</a> & <a href='https://www.houstonmethodist.org'>Houston Methodist</a>, Houston, Texas, United States
 profile:
@@ -9,8 +9,8 @@ profile:
   image_circular: false # crops the image to make it circular
   address:
 
-news: true  # includes a list of news items
-latest_posts: false # includes a list of the newest posts
+news: true # includes a list of news items
+news_limit: 5 # how many to show here; the rest are at /news/
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---

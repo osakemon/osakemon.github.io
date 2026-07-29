@@ -1,0 +1,11 @@
+{%- comment -%}
+  The site owner's full name as one string.
+
+  Interpolating first/middle/last directly leaves a double space when
+  `middle_name` is blank, which then shows up in the browser tab, the author
+  meta tag and the footer. normalize_whitespace collapses it.
+{%- endcomment -%}
+{%- capture _full_name -%}
+{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+{%- endcapture -%}
+{{- _full_name | normalize_whitespace | strip -}}

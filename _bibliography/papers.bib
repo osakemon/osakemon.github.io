@@ -1,30 +1,36 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@comment{
+  A "*" appended to a surname marks a co-first author; _layouts/bib.html strips
+  it before matching the site owner, so the name still renders emphasised.
+  Entries with `selected={true}` also appear on the home page -- reserved for
+  papers where Weiqing Chen is a first or co-first author.
+}
 
-@article{li2023relay,
-  abbr={Nature Biotech},
-  title={A relay velocity model infers cell-dependent RNA velocity},
-  author={Li, Shengyu and Zhang, Pengzhi and Chen, Weiqing and Ye, Lingqun and Brannan, Kristopher W and Le, Nhat-Tu and Abe, Jun-ichi and Cooke, John P and Wang, Guangyu},
-  abstract={RNA velocity provides an approach for inferring cellular state transitions from single-cell RNA sequencing (scRNA-seq) data. Conventional RNA velocity models infer universal kinetics from all cells in an scRNA-seq experiment, resulting in unpredictable performance in experiments with multi-stage and/or multi-lineage transition of cell states where the assumption of the same kinetic rates for all cells no longer holds. Here we present cellDancer, a scalable deep neural network that locally infers velocity for each cell from its neighbors and then relays a series of local velocities to provide single-cell resolution inference of velocity kinetics. In the simulation benchmark, cellDancer shows robust performance in multiple kinetic regimes, high dropout ratio datasets and sparse datasets. We show that cellDancer overcomes the limitations of existing RNA velocity models in modeling erythroid maturation and hippocampus development. Moreover, cellDancer provides cell-specific predictions of transcription, splicing and degradation rates, which we identify as potential indicators of cell fate in the mouse pancreas.},
-  journal={Nature Biotechnology},
-  year={2023},
-  publisher={Nature Publishing Group US New York},
+
+@article{kotla2026lats1,
+  abbr={Circ Res},
+  title={LATS1/2-CD38 metabolic rewiring links senescence to intraplaque thrombosis},
+  author={Kotla*, Sivareddy and Lee*, Jonghae and Ko*, Kyung Ae and Chen*, Weiqing and Samanthapudi, Venkata Subrahmanya Kumar and Hoang, Oanh and Mejia, Gilbert F. and Li, Shengyu and Lee, Hani and Zhang, Aijun and Cho, Min Soon and Schadler, Keri L. and Rivera, Luis Antonio and Imanishi, Masaki and Samperio, Kay Carlene Tavares and Kim, Jung Hyun and Ostos-Mendoza, Kelia C. and Mariscal-Reyes, Karla N. and Deswal, Anita and Cooke, John P. and Fujiwara, Keigi and Palaskas, Nicolas L. and Koutroumpakis, Efstratios and Gi, Young Jin and Pathania, Rajneesh and Morrell, Craig and Lorenzi, Philip L. and Tan, Lin and Mahmud, Iqbal and Hanssen, Nordin M. J. and Afshar-Kharghan, Vahid and Hamilton, Dale J. and Yvan-Charvet, Laurent and Chini, Eduardo N. and Herrmann, Joerg and Vasquez, Hernan G. and Shen, Ying H. and Martin, James F. and Xu, Haodong and Seeley, Erin H. and Burks, Jared K. and Brookes, Paul S. and Wang, Guangyu and Le, Nhat-Tu and Abe, Jun-ichi},
+  journal={Circulation Research},
+  year={2026},
+  note={*Co-first authors.},
   selected={true},
-  doi={10.1038/s41587-023-01728-5},
-  html={https://www.nature.com/articles/s41587-023-01728-5},
-  pdf={relay.pdf}
+  doi={10.1161/CIRCRESAHA.125.327427},
+  html={https://www.ahajournals.org/doi/full/10.1161/CIRCRESAHA.125.327427},
+  publisher={Lippincott Williams \& Wilkins Hagerstown, MD}
 }
 
 
 @article{chen2025visual,
   abbr={Nature Methods},
   title = {A visual–omics foundation model to bridge histopathology with spatial transcriptomics},
-  author={Chen, Weiqing and Zhang, Pengzhi and Tran, Tu N and Xiao, Yiwei and Li, Shengyu and Shah, Vrutant V and Cheng, Hao and Brannan, Kristopher W and Youker, Keith and Lai, Li and others},
+  author={Chen*, Weiqing and Zhang*, Pengzhi and Tran, Tu N. and Xiao, Yiwei and Li, Shengyu and Shah, Vrutant V. and Cheng, Hao and Brannan, Kristopher W. and Youker, Keith and Lai, Li and Fang, Longhou and Yang, Yu and Le, Nhat-Tu and Abe, Jun-ichi and Chen, Shu-Hsia and Ma, Qin and Chen, Ken and Song, Qianqian and Cooke, John P. and Wang, Guangyu},
   abstract={Artificial intelligence has revolutionized computational biology. Recent developments in omics technologies, including single-cell RNA sequencing and spatial transcriptomics, provide detailed genomic data alongside tissue histology. However, current computational models focus on either omics or image analysis, lacking their integration. To address this, we developed OmiCLIP, a visual–omics foundation model linking hematoxylin and eosin images and transcriptomics using tissue patches from Visium data. We transformed transcriptomic data into ‘sentences’ by concatenating top-expressed gene symbols from each patch. We curated a dataset of 2.2 million paired tissue images and transcriptomic data across 32 organs to train OmiCLIP integrating histology and transcriptomics. Building on OmiCLIP, our Loki platform offers five key functions: tissue alignment, annotation via bulk RNA sequencing or marker genes, cell-type decomposition, image–transcriptomics retrieval and spatial transcriptomics gene expression prediction from hematoxylin and eosin-stained images. Compared with 22 state-of-the-art models on 5 simulations, and 19 public and 4 in-house experimental datasets, Loki demonstrated consistent accuracy and robustness.},
   journal={Nature Methods},
   year={2025},
+  note={*Co-first authors.},
   doi={10.1038/s41592-025-02707-1},
   html={https://www.nature.com/articles/s41592-025-02707-1},
   selected={true},
@@ -35,10 +41,11 @@
 @article{zhang2025thor,
   abbr={Nature Comm},
   title = {Thor: a platform for cell-level investigation of spatial transcriptomics and histology},
-  author={Zhang, Pengzhi and Chen, Weiqing and Tran, Tu Nhi and Zhou, Minghao and Carter, Kaylee N and Kandel, Ibrahem and Li, Shengyu and Hoi, Xen Ping and Youker, Keith and Lai, Li and others},
+  author={Zhang*, Pengzhi and Chen*, Weiqing and Tran, Tu N. and Zhou, Minghao and Carter, Kaylee N. and Kandel, Ibrahem and Li, Shengyu and Hoi, Xen Ping and Sun, Yuxing and Lai, Li and Youker, Keith and Song, Qianqian and Yang, Yu and Nikolos, Fotis and Li, Zejuan and Chan, Keith Syson and Cooke, John P. and Wang, Guangyu},
   abstract={Spatial transcriptomics links gene expression with tissue morphology, however, current tools often prioritize genomic analysis, lacking integrated image interpretation. To address this, we present Thor, a comprehensive platform for cell-level analysis of spatial transcriptomics and histological images. Thor employs an anti-shrinking Markov diffusion method to infer single-cell spatial transcriptome from spot-level data, effectively combining gene expression and cell morphology. The platform includes 10 modular tools for genomic and image-based analysis, and is paired with Mjolnir, a web-based interface for interactive exploration of gigapixel images. Thor is validated on simulated data and multiple spatial platforms (ISH, MERFISH, Xenium, Stereo-seq). Thor characterizes regenerative signatures in heart failure, screens breast cancer hallmarks, resolves fine layers in mouse olfactory bulb, and annotates fibrotic heart tissue. In high-resolution Visium HD data, it enhances spatial gene patterns aligned with histology. By bridging transcriptomic and histological analysis, Thor enables holistic tissue interpretation in spatial biology.},
   journal={Nature Communications},
   year={2025},
+  note={*Co-first authors.},
   doi={10.1038/s41467-025-62593-1},
   html={https://www.nature.com/articles/s41467-025-62593-1},
   selected={true},
@@ -46,11 +53,10 @@
 }
 
 
-
 @article{han2025lymphatic,
   abbr={Dev Cell},
   title={Lymphatic endothelial mTORC1 instructs metabolic and developmental signaling during lymphangiogenesis},
-  author={Han, Fei and Simeroth, Summer and Zhu, Jie and Gryniuk, Irma and Pranay, Atul and Chen, Weiqing and Wang, Yuan and Cai, Yuanyuan and Shen, Zhiyuan and Wang, Guangyu and others},
+  author={Han, Fei and Simeroth, Summer and Zhu, Jie and Gryniuk, Irma and Pranay, Atul and Chen, Weiqing and Wang, Yuan and Cai, Yuanyuan and Shen, Zhiyuan and Wang, Guangyu and Griffin, Courtney T. and Xia, Lijun and Yu, Pengchun},
   abstract={The lymphatic vasculature comprises lymphatic capillaries and collecting vessels. To support lymphatic development, lymphatic endothelial cells (LECs) utilize nutrients to fuel lymphangiogenic processes. Meanwhile, LECs maintain constant prospero homeobox 1 (PROX1) expression critical for lymphatic specification. However, molecular mechanisms orchestrating nutrient metabolism while sustaining PROX1 levels in LECs remain unclear. Here, we show that loss of RAPTOR, an indispensable mechanistic target of rapamycin complex 1 (mTORC1) component, downregulates PROX1 and impairs lymphatic capillary growth and differentiation of collecting lymphatics in mice. Mechanistically, mTORC1 inhibition in mouse and human LECs causes Myc reduction, which decreases hexokinase 2 (HK2) and glutaminase (GLS), inhibiting glycolysis and glutaminolysis. Myc or HK2/GLS ablation impedes lymphatic capillary and collecting vessel formation. Interestingly, mTORC1 regulation of PROX1 is independent of Myc-HK2/GLS signaling. Moreover, genetic interaction analysis indicates that Myc and PROX1 play crucial roles in mTORC1-regulated lymphatic development. Collectively, our findings identify mTORC1 as a key regulator of metabolic programs and PROX1 expression during lymphangiogenesis.},
   journal={Developmental Cell},
   year={2025},
@@ -63,25 +69,24 @@
 @article{kim2025apoa1,
   abbr={Nature Comm},
   title={APOA1 binding protein promotes lymphatic cell fate and lymphangiogenesis by relieving caveolae-mediated inhibition of VEGFR3 signaling},
-  author={Kim, Jun-dae and Chaudhary, Surbhi and Chen, Weiqing and Astin, Jonathan and Crosier, Philip S and Yu, Pengchun and Cooke, John P and Pownall, Henry J and Bellen, Hugo J and Le, Nhat-Tu and others},
+  author={Kim, Jun-dae and Chaudhary, Surbhi and Chen, Weiqing and Astin, Jonathan and Crosier, Philip S. and Yu, Pengchun and Cooke, John P. and Pownall, Henry J. and Bellen, Hugo J. and Le, Nhat-Tu and Kiss, Daniel L. and Wang, Guangyu and Rockson, Stanley G. and Chen, Hong and Fang, Longhou},
   journal={Nature Communications},
   year={2025},
   doi={10.1038/s41467-025-60611-w},
-  html={https://www.cell.com/developmental-cell/fulltext/S1534-5807(25)00250-3},
+  html={https://www.nature.com/articles/s41467-025-60611-w},
   publisher={Nature Publishing Group UK London}
 }
 
 
-@article{kotla2026lats1,
-  abbr={Circulation research},
-  title={LATS1/2-CD38 Metabolic Rewiring Links Senescence to Intraplaque Thrombosis},
-  author={Kotla, Sivareddy and Lee, Jonghae and Ko, Kyung Ae and Chen, Weiqing and Samanthapudi, Venkata Subrahmanya Kumar and Hoang, Oanh and Mejia, Gilbert F and Li, Shengyu and Lee, Hani and Zhang, Aijun and others},
-  journal={Circulation research},
-  year={2026},
-  selected={true},
-  doi={10.1161/CIRCRESAHA.125.327427},
-  html={https://www.cell.com/developmental-cell/fulltext/S1534-5807(25)00250-3},
-  publisher={Lippincott Williams \& Wilkins Hagerstown, MD}
+@article{li2023relay,
+  abbr={Nature Biotech},
+  title={A relay velocity model infers cell-dependent RNA velocity},
+  author={Li, Shengyu and Zhang, Pengzhi and Chen, Weiqing and Ye, Lingqun and Brannan, Kristopher W. and Le, Nhat-Tu and Abe, Jun-ichi and Cooke, John P. and Wang, Guangyu},
+  abstract={RNA velocity provides an approach for inferring cellular state transitions from single-cell RNA sequencing (scRNA-seq) data. Conventional RNA velocity models infer universal kinetics from all cells in an scRNA-seq experiment, resulting in unpredictable performance in experiments with multi-stage and/or multi-lineage transition of cell states where the assumption of the same kinetic rates for all cells no longer holds. Here we present cellDancer, a scalable deep neural network that locally infers velocity for each cell from its neighbors and then relays a series of local velocities to provide single-cell resolution inference of velocity kinetics. In the simulation benchmark, cellDancer shows robust performance in multiple kinetic regimes, high dropout ratio datasets and sparse datasets. We show that cellDancer overcomes the limitations of existing RNA velocity models in modeling erythroid maturation and hippocampus development. Moreover, cellDancer provides cell-specific predictions of transcription, splicing and degradation rates, which we identify as potential indicators of cell fate in the mouse pancreas.},
+  journal={Nature Biotechnology},
+  year={2023},
+  doi={10.1038/s41587-023-01728-5},
+  html={https://www.nature.com/articles/s41587-023-01728-5},
+  pdf={relay.pdf},
+  publisher={Nature Publishing Group US New York}
 }
-
-

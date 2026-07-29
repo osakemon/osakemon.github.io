@@ -1,30 +1,38 @@
+<!-- _includes/news.html
 
-          <div class="news">
-            {% if site.news != blank -%}
-            {%- assign news_size = site.news | size -%}
-            <div class="table-responsive" {% if site.news.scrollable and news_size > 3 %}style="max-height: 10vw"{% endif %}>
-              <table class="table table-sm table-borderless">
-              {%- assign news = site.news | reverse -%}
-              {% if site.news.limit %}
-              {% assign news_limit = site.news.limit %}
-              {% else %}
-              {% assign news_limit = news_size %}
-              {% endif %}
-              {% for item in news limit: news_limit %}
-                <tr>
-                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
-                  <td>
-                    {% if item.inline -%}
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%}
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %}
-                  </td>
-                </tr>
-              {%- endfor %}
-              </table>
-            </div>
-          {%- else -%}
-            <p>No news so far...</p>
-          {%- endif %}
-          </div>
+     Renders _news entries, newest first.
+
+     Parameters:
+       limit   - show only the N most recent entries (default: all)
+       grouped - when truthy, break the list into per-year sections
+
+     An entry may set `date_display` in its front matter to override the
+     printed date; `date` still drives sorting. Use it when only the month is
+     known, so the page does not imply a precision the source does not have.
+-->
+{%- assign news_items = site.news | sort: "date" | reverse -%}
+{%- if include.limit -%}
+  {%- assign news_items = news_items | slice: 0, include.limit -%}
+{%- endif -%}
+
+<div class="news">
+{%- if news_items == empty %}
+  <p>No news so far...</p>
+{%- elsif include.grouped %}
+  {%- assign years = news_items | group_by_exp: "item", "item.date | date: '%Y'" -%}
+  {%- for year in years %}
+  <h2 class="news-year">{{ year.name }}</h2>
+  <table class="table table-sm table-borderless">
+    {%- for item in year.items %}
+    {% include news_row.html item=item %}
+    {%- endfor %}
+  </table>
+  {%- endfor %}
+{%- else %}
+  <table class="table table-sm table-borderless">
+    {%- for item in news_items %}
+    {% include news_row.html item=item %}
+    {%- endfor %}
+  </table>
+{%- endif %}
+</div>
