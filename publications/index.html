@@ -112,7 +112,64 @@
 <div class="publications">
   <h2 class="year">2026</h2>
   <h2 class="bibliography">2026</h2>
-<ol class="bibliography"><li>
+<ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<!-- `site.data.venues` (abbr -> url/color) and `site.data.coauthors`
+     (surname -> homepage) are optional; neither file exists right now, so
+     venue badges render plain and author names render unlinked. -->
+
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Nature Comm</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="wang2026deep" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Deep-learning-enabled multi-omics analyses for prediction of future metastasis in cancer</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Xiaoying Wang, Maoteng Duan, Anthony J. Snyder, Po-Lan Su, Jianying Li, Jordan Krull, Jiacheng Jin, Yang Xu, Yuhan Sun, Hu Chen, and
+          <span class="more-authors" title="click to view 14 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '14 more authors' ? 'Weidong Wu, Weiqing Chen, Kai He, Chi Zhang, Sha Cao, Jing Zhao, Dong Xu, Guangyu Wang, Lang Li, Gang Xin, David P. Carbone, Zihai Li, Richard L. Carpenter, Qin Ma' : '14 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">14 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Nature Communications</em>, 2026
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a href="https://www.nature.com/articles/s41467-026-76277-x" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1038/s41467-026-76277-x"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1038/s41467-026-76277-x" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li>
 <!-- _layouts/bib.html -->
 <!-- `site.data.venues` (abbr -> url/color) and `site.data.coauthors`
      (surname -> homepage) are optional; neither file exists right now, so
@@ -167,7 +224,8 @@
           
         </div>
       </div>
-</li></ol>
+</li>
+</ol>
 
   <h2 class="year">2025</h2>
   <h2 class="bibliography">2025</h2>
@@ -474,7 +532,7 @@
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2026 Weiqing Chen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: August 06, 2026.
+Last updated: September 01, 2026.
       </div>
     </footer>
 
