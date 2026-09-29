@@ -8,11 +8,11 @@ middle_name:
 last_name: Chen
 email: wec4005@med.cornell.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Weiqing Chen, PhD candidate at Weill Cornell Medicine. Research in AI/ML for computational biology, spatial transcriptomics, and multimodal foundation models.
+  Weiqing Chen is a fifth-year PhD candidate at Weill Cornell Medicine developing multimodal foundation models and research tools for computational pathology, single-cell and spatial biology, and multi-omics analysis.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Weiqing Chen, computational biology, spatial transcriptomics, foundation models, machine learning, bioinformatics
+keywords: Weiqing Chen, AI for Science, biomedical AI, multimodal learning, contrastive learning, computational pathology, single-cell biology, spatial biology, multi-omics, biological dynamics, foundation models, computational biology
 
 lang: en
 icon: # favicon: an emoji, or an image filename under /assets/img/. Blank = none.
@@ -35,7 +35,7 @@ highlight_theme_dark: native
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 max_width: 800px
 
@@ -59,7 +59,7 @@ github_username: osakemon
 twitter_username: wchen4005
 scholar_userid: Dh7tSbYAAAAJ # Google Scholar ID
 orcid_id:
-linkedin_username:
+linkedin_username: weiqing-chen
 
 contact_note:
 

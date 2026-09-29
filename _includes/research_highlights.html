@@ -1,0 +1,45 @@
+<section class="research-highlights" aria-labelledby="research-heading">
+  <div class="research-heading">
+    <h2 id="research-heading">Selected Research</h2>
+    <a href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">&rarr;</span></a>
+  </div>
+
+  <article class="research-project" aria-labelledby="omiclip-heading">
+    <p class="research-meta">Nature Methods, 2025 <span aria-hidden="true">&middot;</span> Co-first author</p>
+    <h3 id="omiclip-heading">OmiCLIP &amp; Loki: connecting tissue images and gene expression</h3>
+    <p>A visual–omics foundation model that learns a shared representation of histology and transcriptomics through contrastive learning. The Loki platform uses these representations for retrieval, tissue annotation, alignment, cell-type decomposition, and gene expression prediction.</p>
+    <ul class="research-evidence" aria-label="OmiCLIP and Loki study scale">
+      <li><strong>2.2M</strong> paired image–omics profiles</li>
+      <li><strong>1,007</strong> tissue samples</li>
+      <li><strong>32</strong> organs</li>
+      <li><strong>22</strong> comparison methods</li>
+    </ul>
+    <div class="research-links">
+      <a href="https://www.nature.com/articles/s41592-025-02707-1" aria-label="OmiCLIP and Loki paper">Paper <span aria-hidden="true">&rarr;</span></a>
+      <a href="https://github.com/GuangyuWangLab2021/Loki" aria-label="OmiCLIP and Loki code">Code</a>
+      <a href="https://huggingface.co/WangGuangyuLab/Loki" aria-label="OmiCLIP pretrained model weights">Model weights</a>
+    </div>
+  </article>
+
+  <article class="research-project" aria-labelledby="thor-heading">
+    <p class="research-meta">Nature Communications, 2025 <span aria-hidden="true">&middot;</span> Co-first author</p>
+    <h3 id="thor-heading">Thor: integrating spatial transcriptomics and histology at cell resolution</h3>
+    <p>Integrates histology and spatial transcriptomics at cellular resolution using graph diffusion. Applications include CNV-based tumor mapping in ductal carcinoma in situ and analysis of vascular PLA2G2A enrichment in heart tissue following LVAD support.</p>
+    <div class="research-links">
+      <a href="https://www.nature.com/articles/s41467-025-62593-1" aria-label="Thor paper">Paper <span aria-hidden="true">&rarr;</span></a>
+      <a href="https://github.com/GuangyuWangLab2021/Thor" aria-label="Thor code">Code</a>
+    </div>
+  </article>
+
+  <article class="research-project" aria-labelledby="celldancer-heading">
+    <p class="research-meta">Nature Biotechnology, 2024 <span aria-hidden="true">&middot;</span> Co-author</p>
+    <h3 id="celldancer-heading">cellDancer: modeling RNA velocity and cell-state dynamics</h3>
+    <p>A deep learning framework that infers cell-specific RNA velocity from single-cell sequencing data. By estimating transcription, splicing, and degradation rates for individual cells, cellDancer models heterogeneous cell-state transitions across developmental stages and lineages.</p>
+    <div class="research-links">
+      <a href="https://www.nature.com/articles/s41587-023-01728-5" aria-label="cellDancer paper">Paper <span aria-hidden="true">&rarr;</span></a>
+      <a href="https://github.com/GuangyuWangLab2021/cellDancer" aria-label="cellDancer code">Code</a>
+    </div>
+  </article>
+
+  <p class="research-more">See the <a href="{{ '/publications/' | relative_url }}">full publication list</a>.</p>
+</section>

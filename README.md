@@ -24,7 +24,8 @@ processing to run.
 | --- | --- |
 | `_pages/` | The pages of the site. `about.md` is the home page (`/`). |
 | `_news/` | News entries, one file per item, named `YYYY-MM-DD-slug.md`. Rendered inline on the home page and at `/news/`. |
-| `_bibliography/papers.bib` | Publications, rendered by jekyll-scholar. `selected={true}` also lists the entry on the home page. |
+| `_bibliography/papers.bib` | Complete publication list, rendered by jekyll-scholar. |
+| `_includes/research_highlights.html` | Home-page research summaries and paper/code/model links. |
 | `_projects/` | Project entries shown on `/projects/` (currently empty). |
 | `_layouts/`, `_includes/`, `_sass/`, `assets/` | Theme internals. |
 
@@ -46,6 +47,10 @@ sets `nav: true`, ordered by `nav_order`. Today that is `about` and
   [`_pages/publications.md`](_pages/publications.md). Optional fields include
   `abbr`, `selected`, `html`, `pdf` (relative to `assets/pdf/`), `code`,
   `poster` and `slides`.
+- **A research highlight** — edit `_includes/research_highlights.html`. Verify
+  project summaries and results against the linked paper or current research records.
+  The home page uses these summaries in place of full citations;
+  setting `selected_papers: true` in `about.md` also renders `selected={true}` entries.
 - **A project** — add a file to `_projects/` with a `title`, `description`,
   `category` (`work` or `fun`) and `importance`, then flip `nav: true` in
   [`_pages/projects.md`](_pages/projects.md).

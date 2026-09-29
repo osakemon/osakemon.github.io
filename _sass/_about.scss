@@ -1,0 +1,121 @@
+// Research overview on the home page, using the existing light/dark palette.
+.about-page {
+  .research-focus {
+    color: var(--global-theme-color);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .research-lead {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    font-weight: 400;
+  }
+
+  .research-opportunities {
+    border-left: 3px solid var(--global-theme-color);
+    background: var(--global-code-bg-color);
+    padding: 1rem 1.25rem;
+    margin: 1rem 0 2.5rem;
+
+    p {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  .research-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      min-height: 44px;
+      font-weight: 500;
+    }
+  }
+
+  .research-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    margin-bottom: 1.25rem;
+
+    h2 {
+      margin: 0;
+    }
+
+    > a {
+      font-size: 0.9rem;
+    }
+  }
+
+  .research-project {
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--global-divider-color);
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  .research-meta {
+    color: var(--global-theme-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .research-evidence {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+
+    li {
+      font-size: 0.9rem;
+    }
+
+    strong {
+      font-size: 1.15rem;
+    }
+  }
+
+  .research-more {
+    font-size: 0.95rem;
+  }
+
+  .research-more {
+    margin-bottom: 2.5rem;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 4px;
+  }
+
+  @media (max-width: 575.98px) {
+    .profile {
+      width: 28%;
+      max-width: 130px;
+      margin-bottom: 0.5rem;
+    }
+
+    .research-lead {
+      font-size: 1.1rem;
+    }
+  }
+}

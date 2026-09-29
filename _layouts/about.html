@@ -3,11 +3,14 @@ layout: default
 ---
 
 <!-- about.html -->
-      <div class="post">
+      <div class="post about-page">
         <header class="post-header">
           <h1 class="post-title">
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span>{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
+          {% if page.research_focus %}
+          <p class="research-focus">{{ page.research_focus }}</p>
+          {% endif %}
           <p class="desc">{{ page.subtitle }}</p>
         </header>
 
@@ -23,10 +26,11 @@ layout: default
                 {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
               {% endif %}
 
+              {%- capture profile_alt -%}Portrait of {% include full_name.html %}{%- endcapture -%}
               {% include figure.html
               path=profile_image_path
               class=profile_image_class
-              alt=page.profile.image -%}
+              alt=profile_alt -%}
             {% endif -%}
             {%- if page.profile.address %}
             <div class="address">
@@ -39,6 +43,22 @@ layout: default
           <div class="clearfix">
             {{ content }}
           </div>
+
+          {% if page.research_highlights %}
+          <aside class="research-opportunities" aria-label="Research opportunities">
+            <p><strong>Open to industry research opportunities</strong> in AI for Science and biomedical AI</p>
+            <div class="research-links" aria-label="Contact and research profiles">
+              <a href="mailto:{{ site.email | encode_email }}">Email me <span aria-hidden="true">&rarr;</span></a>
+              {% if site.linkedin_username %}
+              <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+              {% endif %}
+              <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>
+              <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+              <a href="{{ '/publications/' | relative_url }}">Publications</a>
+            </div>
+          </aside>
+          {% include research_highlights.html %}
+          {% endif %}
 
           <!-- News: only the most recent few; the rest live at /news/ -->
           {% if page.news -%}
