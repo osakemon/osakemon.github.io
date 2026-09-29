@@ -694,4 +694,103 @@ pre:active .copy, pre:focus .copy, pre:hover .copy {
   opacity: 1;
 }
 
+.about-page .research-focus {
+  color: var(--global-theme-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.about-page .post-header {
+  margin-bottom: 1.5rem;
+}
+.about-page .research-lead {
+  font-size: 1.2rem;
+  line-height: 1.55;
+  font-weight: 400;
+}
+.about-page .research-opportunities {
+  border-left: 3px solid var(--global-theme-color);
+  background: var(--global-code-bg-color);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0 2.5rem;
+}
+.about-page .research-opportunities p {
+  margin-bottom: 0.75rem;
+}
+.about-page .research-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+}
+.about-page .research-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 44px;
+  font-weight: 500;
+}
+.about-page .research-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.25rem;
+}
+.about-page .research-heading h2 {
+  margin: 0;
+}
+.about-page .research-heading > a {
+  font-size: 0.9rem;
+}
+.about-page .research-project {
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--global-divider-color);
+}
+.about-page .research-project h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+.about-page .research-meta {
+  color: var(--global-theme-color);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.about-page .research-evidence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.about-page .research-evidence li {
+  font-size: 0.9rem;
+}
+.about-page .research-evidence strong {
+  font-size: 1.15rem;
+}
+.about-page .research-more {
+  font-size: 0.95rem;
+}
+.about-page .research-more {
+  margin-bottom: 2.5rem;
+}
+.about-page a:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 4px;
+}
+@media (max-width: 575.98px) {
+  .about-page .profile {
+    width: 28%;
+    max-width: 130px;
+    margin-bottom: 0.5rem;
+  }
+  .about-page .research-lead {
+    font-size: 1.1rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
