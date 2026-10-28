@@ -34,9 +34,9 @@ links:
 
 Mjolnir is Thor's web interface: a viewer for whole-slide images with Thor's outputs overlaid, built for pathologists and biologists who want to inspect results interactively.
 
-{% include video.html path="thor_mjolnir_gene_expression.mp4" poster="projects/thor_mjolnir_gene_expression_poster.jpg" label="Mjolnir: visualization of gene expression at spot and cell level" caption="<strong>Gene expression at spot and cell level.</strong> Upload an H&E slide with spot- or cell-level data, pick a gene, set the colour range, then draw a region to get its expression histogram and summary statistics. Breast cancer sample with 76,320 cells. 2 min 55 s." %}
+{% include video.html path="thor_mjolnir_gene_expression.mp4" poster="projects/thor_mjolnir_gene_expression_poster.jpg" label="Mjolnir: visualization of gene expression at spot and cell level" caption="<strong>Gene expression at spot and cell level.</strong> Upload an H&E slide with spot- or cell-level data, pick a gene, set the colour range, then draw a region to get its expression histogram and summary statistics. Breast cancer sample with 76,320 cells. 2 min 55 s. Video created by Alex Tran." %}
 
-{% include video.html path="thor_mjolnir_cell_annotation.mp4" poster="projects/thor_mjolnir_cell_annotation_poster.jpg" label="Mjolnir: semi-supervised annotation of cells" caption="<strong>Semi-supervised annotation of cells.</strong> Check Thor's cell detection on the slide, select a few cells of interest, and let Mjolnir locate similar cells across the whole tissue. 45 s." %}
+{% include video.html path="thor_mjolnir_cell_annotation.mp4" poster="projects/thor_mjolnir_cell_annotation_poster.jpg" label="Mjolnir: semi-supervised annotation of cells" caption="<strong>Semi-supervised annotation of cells.</strong> Check Thor's cell detection on the slide, select a few cells of interest, and let Mjolnir locate similar cells across the whole tissue. 45 s. Video created by Alex Tran." %}
 
 ## My contributions
 
