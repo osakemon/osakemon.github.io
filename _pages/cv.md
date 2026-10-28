@@ -12,11 +12,13 @@ nav_order: 3
      truth: when it changes, replace the file and mirror the edits here. -->
 <div class="cv-page" markdown="1">
 
-<div class="research-links cv-actions" aria-label="CV downloads and profiles">
+<div class="research-links cv-actions" aria-label="CV downloads, contact and profiles">
   <a href="{{ '/assets/pdf/CV-WeiqingChen.pdf' | relative_url }}">Download PDF <span aria-hidden="true">&rarr;</span></a>
-  <a href="{{ '/publications/' | relative_url }}">Publications</a>
-  <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>
+  <a href="mailto:{{ site.email | encode_email }}">Email</a>
   <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+  <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+  <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>
+  <a href="{{ '/publications/' | relative_url }}">Publications</a>
 </div>
 <p class="cv-updated">PDF version: October 2026.</p>
 
@@ -70,9 +72,9 @@ Machine-learning researcher developing multimodal foundation models and research
   <p class="cv-role">Visiting Graduate Research Fellow | Houston, TX</p>
   <ul>
     <li>Led <strong>OmiCLIP</strong>, a visual-omics foundation model, from model design and data curation through training and evaluation, aligning histopathology with transcriptomics via contrastive learning on <strong>2.2 million paired tissue patches</strong> from <strong>1,007 samples across 32 organs</strong>, curated from <strong>113 studies</strong>. Benchmarked the model and its downstream platform, Loki, against <strong>22 state-of-the-art methods across five core downstream task categories</strong>; co-first author, <strong>Nature Methods</strong> (2025).</li>
-    <li>Built and released <strong>Loki</strong>, the open-source downstream platform that translates OmiCLIP into five capabilities for biological research: tissue alignment, molecular annotation, cell-type decomposition, image-transcriptomics retrieval, and spatial gene-expression prediction from H&amp;E images. Across visual-omics projects and Loki2, worked with <strong>TB-scale pathology datasets spanning over 100,000 images</strong>.</li>
+    <li>Built and released <strong>Loki</strong>, the open-source downstream platform that translates OmiCLIP into five capabilities for biological research: tissue alignment, molecular annotation, cell-type decomposition, image-transcriptomics retrieval, and spatial gene-expression prediction from H&amp;E images. Across visual-omics projects and Loki2, worked with <strong>TB-scale pathology datasets spanning over 100,000 images</strong>. <span class="cv-links"><a href="https://github.com/GuangyuWangLab2021/Loki">Code</a> · <a href="https://huggingface.co/WangGuangyuLab/Loki">Model weights</a> · <a href="{{ '/projects/loki/' | relative_url }}">Project page</a></span></li>
     <li>Led end-to-end development of a <strong>single-cell pathology foundation model</strong> for molecular decoding of H&amp;E images, spanning model design, data curation, training, evaluation, software development, downstream task development, and applications to biological research; first-author manuscript in <strong>third-round revision at Nature</strong>.</li>
-    <li>Led downstream application design and analysis for <strong>Thor</strong>, integrating histology and spatial transcriptomics at cellular resolution to enable CNV-based tumor mapping in ductal carcinoma in situ and identify vascular PLA2G2A enrichment in post-LVAD heart tissues; co-first author, <strong>Nature Communications</strong> (2025).</li>
+    <li>Led downstream application design and analysis for <strong>Thor</strong>, integrating histology and spatial transcriptomics at cellular resolution to enable CNV-based tumor mapping in ductal carcinoma in situ and identify vascular PLA2G2A enrichment in post-LVAD heart tissues; co-first author, <strong>Nature Communications</strong> (2025). <span class="cv-links"><a href="https://github.com/GuangyuWangLab2021/Thor">Code</a> · <a href="{{ '/projects/thor/' | relative_url }}">Project page</a></span></li>
     <li><strong>Collaborative biological discovery:</strong> Computational analyses with experimental teams linked LATS1/2-CD38 signaling to endothelial senescence and thrombosis, mTORC1 and AIBP-VEGFR3 to lymphatic development, and metastatic precursor cells to candidate HSP90AA1/HSP90AB1 biomarkers; co-first author, <strong>Circulation Research</strong>; contributing author, <strong>Developmental Cell</strong> and <strong>Nature Communications</strong>.</li>
     <li><strong>Technical mentoring and training:</strong> Mentored <strong>five</strong> junior Ph.D. students, rotation students, and research assistants through shared pipelines, code review, and result reproduction; trainee analyses supported downstream applications and one trainee built an independent pipeline. Contributed materials and training for the <strong>ISMB 2026 tutorial</strong> on visual-omics foundation models; coordinated compute needs with HPC platform providers.</li>
   </ul>
@@ -85,7 +87,7 @@ Machine-learning researcher developing multimodal foundation models and research
   </header>
   <p class="cv-role">Research Assistant Intern | Remote</p>
   <ul>
-    <li>Analyzed single-cell data and evaluated model robustness for <strong>cellDancer</strong>, a deep-learning method for cell-dependent RNA velocity and cell-state dynamics; contributing author, <strong>Nature Biotechnology</strong>.</li>
+    <li>Analyzed single-cell data and evaluated model robustness for <strong>cellDancer</strong>, a deep-learning method for cell-dependent RNA velocity and cell-state dynamics; contributing author, <strong>Nature Biotechnology</strong>. <span class="cv-links"><a href="https://github.com/GuangyuWangLab2021/cellDancer">Code</a> · <a href="{{ '/projects/celldancer/' | relative_url }}">Project page</a></span></li>
   </ul>
 </article>
 
@@ -116,13 +118,13 @@ Machine-learning researcher developing multimodal foundation models and research
 <p class="cv-note">*Co-first authors. The <a href="{{ '/publications/' | relative_url }}">publications page</a> has links to every paper.</p>
 
 1. **W. Chen\***, Q. Li\*, H. Cheng\*, et al. A single-cell pathology foundation model for molecular decoding of H&E images. Under revision in **Nature**, third round.
-2. **W. Chen\***, P. Zhang\*, et al. A visual-omics foundation model to bridge histopathology with spatial transcriptomics. **Nature Methods**, 2025.
-3. P. Zhang\*, **W. Chen\***, et al. Thor: a platform for cell-level investigation of spatial transcriptomics and histology. **Nature Communications**, 2025.
-4. S. Kotla\*, J. Lee\*, K. A. Ko\*, **W. Chen\***, et al. LATS1/2-CD38 metabolic rewiring links senescence to intraplaque thrombosis. **Circulation Research**, 2026.
-5. S. Li\*, P. Zhang\*, **W. Chen**, et al. A relay velocity model infers cell-dependent RNA velocity. **Nature Biotechnology**, 2024.
-6. X. Wang, M. Duan, A. J. Snyder, …, **W. Chen**, et al. Deep-learning-enabled multi-omics analyses for prediction of future metastasis in cancer. **Nature Communications**, 2026.
-7. F. Han, S. Simeroth, J. Zhu, I. Gryniuk, A. Pranay, **W. Chen**, et al. Lymphatic endothelial mTORC1 instructs metabolic and developmental signaling during lymphangiogenesis. **Developmental Cell**, 2025.
-8. J. Kim, S. Chaudhary, **W. Chen**, et al. APOA1 binding protein promotes lymphatic cell fate and lymphangiogenesis by relieving caveolae-mediated inhibition of VEGFR3 signaling. **Nature Communications**, 2025.
+2. **W. Chen\***, P. Zhang\*, et al. A visual-omics foundation model to bridge histopathology with spatial transcriptomics. **Nature Methods**, 2025. [Paper](https://www.nature.com/articles/s41592-025-02707-1)
+3. P. Zhang\*, **W. Chen\***, et al. Thor: a platform for cell-level investigation of spatial transcriptomics and histology. **Nature Communications**, 2025. [Paper](https://www.nature.com/articles/s41467-025-62593-1)
+4. S. Kotla\*, J. Lee\*, K. A. Ko\*, **W. Chen\***, et al. LATS1/2-CD38 metabolic rewiring links senescence to intraplaque thrombosis. **Circulation Research**, 2026. [Paper](https://www.ahajournals.org/doi/full/10.1161/CIRCRESAHA.125.327427)
+5. S. Li\*, P. Zhang\*, **W. Chen**, et al. A relay velocity model infers cell-dependent RNA velocity. **Nature Biotechnology**, 2024. [Paper](https://www.nature.com/articles/s41587-023-01728-5)
+6. X. Wang, M. Duan, A. J. Snyder, …, **W. Chen**, et al. Deep-learning-enabled multi-omics analyses for prediction of future metastasis in cancer. **Nature Communications**, 2026. [Paper](https://www.nature.com/articles/s41467-026-76277-x)
+7. F. Han, S. Simeroth, J. Zhu, I. Gryniuk, A. Pranay, **W. Chen**, et al. Lymphatic endothelial mTORC1 instructs metabolic and developmental signaling during lymphangiogenesis. **Developmental Cell**, 2025. [Paper](https://www.cell.com/developmental-cell/fulltext/S1534-5807(25)00250-3)
+8. J. Kim, S. Chaudhary, **W. Chen**, et al. APOA1 binding protein promotes lymphatic cell fate and lymphangiogenesis by relieving caveolae-mediated inhibition of VEGFR3 signaling. **Nature Communications**, 2025. [Paper](https://www.nature.com/articles/s41467-025-60611-w)
 
 ## Selected presentations &amp; awards
 

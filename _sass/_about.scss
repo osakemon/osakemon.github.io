@@ -322,6 +322,11 @@
     color: var(--global-text-color-light);
   }
 
+  .cv-links {
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+
   .cv-list {
     padding-left: 1.2rem;
 
