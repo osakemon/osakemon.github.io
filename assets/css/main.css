@@ -1103,6 +1103,12 @@ pre:active .copy, pre:focus .copy, pre:hover .copy {
   font-size: 0.9rem;
   color: var(--global-text-color-light);
 }
+.about-page .cv-links,
+.project-page .cv-links,
+.cv-page .cv-links {
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
 .about-page .cv-list,
 .project-page .cv-list,
 .cv-page .cv-list {
