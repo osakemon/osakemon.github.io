@@ -363,11 +363,58 @@ footer.sticky-bottom {
 .projects a {
   text-decoration: none;
 }
-.projects a:hover .card-title {
+.projects .card:hover .card-title a {
   color: var(--global-theme-color);
 }
+.projects .card-title a {
+  color: var(--global-text-color);
+}
+.projects .card-aux-link {
+  position: relative;
+  z-index: 2;
+}
+.projects .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+.projects .grid-item {
+  min-width: 0;
+}
+.projects .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.projects .card figure {
+  margin: 0;
+  max-width: none;
+}
 .projects .card img {
+  display: block;
   width: 100%;
+  max-width: none;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background: #fff;
+}
+.projects .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+.projects .card-body .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.projects .card-body .card-text {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+.projects .card-body > .row {
+  margin-top: auto;
 }
 .projects .card-item {
   width: auto;
@@ -376,11 +423,6 @@ footer.sticky-bottom {
 .projects .card-item .row {
   display: flex;
   align-items: center;
-}
-.projects .grid-sizer,
-.projects .grid-item {
-  width: 250px;
-  margin-bottom: 10px;
 }
 .projects h2.category {
   color: var(--global-divider-color);
@@ -694,42 +736,58 @@ pre:active .copy, pre:focus .copy, pre:hover .copy {
   opacity: 1;
 }
 
-.about-page .research-focus {
+.about-page .research-focus,
+.project-page .research-focus,
+.cv-page .research-focus {
   color: var(--global-theme-color);
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
-.about-page .post-header {
+.about-page .post-header,
+.project-page .post-header,
+.cv-page .post-header {
   margin-bottom: 1.5rem;
 }
-.about-page .research-lead {
+.about-page .research-lead,
+.project-page .research-lead,
+.cv-page .research-lead {
   font-size: 1.2rem;
   line-height: 1.55;
   font-weight: 400;
 }
-.about-page .research-opportunities {
+.about-page .research-opportunities,
+.project-page .research-opportunities,
+.cv-page .research-opportunities {
   border-left: 3px solid var(--global-theme-color);
   background: var(--global-code-bg-color);
   padding: 1rem 1.25rem;
   margin: 1rem 0 2.5rem;
 }
-.about-page .research-opportunities p {
+.about-page .research-opportunities p,
+.project-page .research-opportunities p,
+.cv-page .research-opportunities p {
   margin-bottom: 0.75rem;
 }
-.about-page .research-links {
+.about-page .research-links,
+.project-page .research-links,
+.cv-page .research-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem 1.25rem;
 }
-.about-page .research-links a {
+.about-page .research-links a,
+.project-page .research-links a,
+.cv-page .research-links a {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
   min-height: 44px;
   font-weight: 500;
 }
-.about-page .research-heading {
+.about-page .research-heading,
+.project-page .research-heading,
+.cv-page .research-heading {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -737,28 +795,40 @@ pre:active .copy, pre:focus .copy, pre:hover .copy {
   gap: 0.5rem 1rem;
   margin-bottom: 1.25rem;
 }
-.about-page .research-heading h2 {
+.about-page .research-heading h2,
+.project-page .research-heading h2,
+.cv-page .research-heading h2 {
   margin: 0;
 }
-.about-page .research-heading > a {
+.about-page .research-heading > a,
+.project-page .research-heading > a,
+.cv-page .research-heading > a {
   font-size: 0.9rem;
 }
-.about-page .research-project {
+.about-page .research-project,
+.project-page .research-project,
+.cv-page .research-project {
   padding: 1.25rem 0;
   border-top: 1px solid var(--global-divider-color);
 }
-.about-page .research-project h3 {
+.about-page .research-project h3,
+.project-page .research-project h3,
+.cv-page .research-project h3 {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 0.75rem;
 }
-.about-page .research-meta {
+.about-page .research-meta,
+.project-page .research-meta,
+.cv-page .research-meta {
   color: var(--global-theme-color);
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
-.about-page .research-evidence {
+.about-page .research-evidence,
+.project-page .research-evidence,
+.cv-page .research-evidence {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.5rem;
@@ -766,29 +836,304 @@ pre:active .copy, pre:focus .copy, pre:hover .copy {
   padding: 0;
   margin-bottom: 1rem;
 }
-.about-page .research-evidence li {
+.about-page .research-evidence li,
+.project-page .research-evidence li,
+.cv-page .research-evidence li {
   font-size: 0.9rem;
 }
-.about-page .research-evidence strong {
+.about-page .research-evidence strong,
+.project-page .research-evidence strong,
+.cv-page .research-evidence strong {
   font-size: 1.15rem;
 }
-.about-page .research-more {
+.about-page .research-more,
+.project-page .research-more,
+.cv-page .research-more {
   font-size: 0.95rem;
 }
-.about-page .research-more {
+.about-page .research-more,
+.project-page .research-more,
+.cv-page .research-more {
   margin-bottom: 2.5rem;
 }
-.about-page a:focus-visible {
+.about-page .about-facts,
+.project-page .about-facts,
+.cv-page .about-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem 1.5rem;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0 0 1rem;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.about-page .about-facts li,
+.project-page .about-facts li,
+.cv-page .about-facts li {
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: var(--global-text-color-light);
+}
+.about-page .about-facts strong,
+.project-page .about-facts strong,
+.cv-page .about-facts strong {
+  display: block;
+  font-size: 1.45rem;
+  font-weight: 500;
+  color: var(--global-text-color);
+}
+.about-page .research-project h3 a,
+.project-page .research-project h3 a,
+.cv-page .research-project h3 a {
+  color: inherit;
+}
+.about-page .research-project h3 a:hover,
+.project-page .research-project h3 a:hover,
+.cv-page .research-project h3 a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+.about-page .research-media,
+.project-page .research-media,
+.cv-page .research-media {
+  display: block;
+  margin: 0.75rem 0 1rem;
+}
+.about-page .research-media figure,
+.project-page .research-media figure,
+.cv-page .research-media figure {
+  margin: 0;
+}
+.about-page .research-media img,
+.project-page .research-media img,
+.cv-page .research-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--global-divider-color);
+  background: #fff;
+}
+.about-page .video-figure,
+.project-page .video-figure,
+.cv-page .video-figure {
+  margin: 0.75rem 0 1.25rem;
+}
+.about-page .video-figure video,
+.project-page .video-figure video,
+.cv-page .video-figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background: #000;
+}
+.about-page .video-figure .caption,
+.project-page .video-figure .caption,
+.cv-page .video-figure .caption {
+  text-align: left;
+  margin-bottom: 0;
+}
+.about-page .research-skills,
+.project-page .research-skills,
+.cv-page .research-skills {
+  margin-bottom: 2.5rem;
+}
+.about-page .research-skills dl,
+.project-page .research-skills dl,
+.cv-page .research-skills dl {
+  margin: 0;
+}
+.about-page .research-skills dl > div,
+.project-page .research-skills dl > div,
+.cv-page .research-skills dl > div {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 0.25rem 1rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--global-divider-color);
+}
+.about-page .research-skills dt,
+.project-page .research-skills dt,
+.cv-page .research-skills dt {
+  font-weight: 500;
+  color: var(--global-theme-color);
+}
+.about-page .research-skills dd,
+.project-page .research-skills dd,
+.cv-page .research-skills dd {
+  margin: 0;
+  font-size: 0.95rem;
+}
+@media (max-width: 575.98px) {
+  .about-page .research-skills dl > div,
+  .project-page .research-skills dl > div,
+  .cv-page .research-skills dl > div {
+    grid-template-columns: 1fr;
+  }
+}
+.about-page.project-page .post-description,
+.project-page.project-page .post-description,
+.cv-page.project-page .post-description {
+  margin-bottom: 0.5rem;
+}
+.about-page.project-page .research-links,
+.project-page.project-page .research-links,
+.cv-page.project-page .research-links {
+  margin-bottom: 0.5rem;
+}
+.about-page.project-page h2,
+.project-page.project-page h2,
+.cv-page.project-page h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+.about-page.project-page figure,
+.project-page.project-page figure,
+.cv-page.project-page figure {
+  margin-bottom: 1.5rem;
+}
+.about-page .project-back,
+.project-page .project-back,
+.cv-page .project-back {
+  margin: 2rem 0 1rem;
+  font-size: 0.95rem;
+}
+.about-page a:focus-visible,
+.project-page a:focus-visible,
+.cv-page a:focus-visible {
   outline: 2px solid var(--global-theme-color);
   outline-offset: 4px;
 }
+.about-page .cv-actions,
+.project-page .cv-actions,
+.cv-page .cv-actions {
+  margin-bottom: 0.25rem;
+}
+.about-page .cv-updated,
+.project-page .cv-updated,
+.cv-page .cv-updated {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 1.5rem;
+}
+.about-page.cv-page h2,
+.project-page.cv-page h2,
+.cv-page.cv-page h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.about-page .cv-entry,
+.project-page .cv-entry,
+.cv-page .cv-entry {
+  margin-bottom: 1.25rem;
+}
+.about-page .cv-entry header,
+.project-page .cv-entry header,
+.cv-page .cv-entry header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+}
+.about-page .cv-entry h3,
+.project-page .cv-entry h3,
+.cv-page .cv-entry h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0;
+}
+.about-page .cv-entry .cv-dates,
+.project-page .cv-entry .cv-dates,
+.cv-page .cv-entry .cv-dates {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  margin: 0;
+  white-space: nowrap;
+}
+.about-page .cv-entry .cv-role,
+.project-page .cv-entry .cv-role,
+.cv-page .cv-entry .cv-role {
+  font-style: italic;
+  margin: 0.15rem 0 0.5rem;
+}
+.about-page .cv-entry ul,
+.project-page .cv-entry ul,
+.cv-page .cv-entry ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+.about-page .cv-entry li,
+.project-page .cv-entry li,
+.cv-page .cv-entry li {
+  margin-bottom: 0.4rem;
+}
+.about-page .cv-skills,
+.project-page .cv-skills,
+.cv-page .cv-skills {
+  margin: 0;
+}
+.about-page .cv-skills > div,
+.project-page .cv-skills > div,
+.cv-page .cv-skills > div {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 0.25rem 1rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--global-divider-color);
+}
+.about-page .cv-skills dt,
+.project-page .cv-skills dt,
+.cv-page .cv-skills dt {
+  font-weight: 500;
+  color: var(--global-theme-color);
+}
+.about-page .cv-skills dd,
+.project-page .cv-skills dd,
+.cv-page .cv-skills dd {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.about-page .cv-note,
+.project-page .cv-note,
+.cv-page .cv-note {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+.about-page .cv-list,
+.project-page .cv-list,
+.cv-page .cv-list {
+  padding-left: 1.2rem;
+}
+.about-page .cv-list li,
+.project-page .cv-list li,
+.cv-page .cv-list li {
+  margin-bottom: 0.4rem;
+}
 @media (max-width: 575.98px) {
-  .about-page .profile {
+  .about-page .profile,
+  .project-page .profile,
+  .cv-page .profile {
     width: 28%;
     max-width: 130px;
     margin-bottom: 0.5rem;
   }
-  .about-page .research-lead {
+  .about-page .about-facts,
+  .project-page .about-facts,
+  .cv-page .about-facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-page .cv-skills > div,
+  .project-page .cv-skills > div,
+  .cv-page .cv-skills > div {
+    grid-template-columns: 1fr;
+  }
+  .about-page .research-lead,
+  .project-page .research-lead,
+  .cv-page .research-lead {
     font-size: 1.1rem;
   }
 }

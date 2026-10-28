@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Thor &amp; Mjolnir | Weiqing Chen</title>
+    <meta name="author" content="Weiqing Chen">
+    <meta name="description" content="Cell-level analysis of spatial transcriptomics and histology, with a browser-based interface for exploring gigapixel tissue images.">
+    <meta name="keywords" content="Weiqing Chen, AI for Science, biomedical AI, multimodal learning, contrastive learning, computational pathology, single-cell biology, spatial biology, spatial transcriptomics, multi-omics, biological dynamics, foundation models, computational biology, research scientist, machine learning scientist">
+
+    <!-- OpenGraph -->
+    <meta property="og:site_name" content="Weiqing Chen">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Weiqing Chen | Thor &amp; Mjolnir">
+    <meta property="og:url" content="https://osakemon.github.io/projects/thor/">
+    <meta property="og:description" content="Cell-level analysis of spatial transcriptomics and histology, with a browser-based interface for exploring gigapixel tissue images.">
+    <meta property="og:image" content="https://osakemon.github.io/assets/img/prof_pic.jpg">
+    <meta property="og:locale" content="en">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Thor &amp; Mjolnir">
+    <meta name="twitter:description" content="Cell-level analysis of spatial transcriptomics and histology, with a browser-based interface for exploring gigapixel tissue images.">
+    <meta name="twitter:image" content="https://osakemon.github.io/assets/img/prof_pic.jpg">
+    <meta name="twitter:site" content="@wchen4005">
+    <meta name="twitter:creator" content="@wchen4005">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "author":
+        {
+          "@type": "Person",
+          "name": "Weiqing Chen"
+        },
+        "url": "https://osakemon.github.io/projects/thor/",
+        "@type": "WebSite",
+        "description": "Cell-level analysis of spatial transcriptomics and histology, with a browser-based interface for exploring gigapixel tissue images.",
+        "headline": "Thor & Mjolnir",
+        "sameAs": ["https://scholar.google.com/citations?user=Dh7tSbYAAAAJ", "https://github.com/osakemon", "https://www.linkedin.com/in/weiqing-chen", "https://twitter.com/wchen4005"],
+        "name": "Weiqing Chen",
+        "@context": "https://schema.org"
+      }
+    </script>
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    <!-- Styles -->
+    <link rel="icon" href="data:,">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://osakemon.github.io/projects/thor/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Weiqing </span>Chen</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">About</a>
+              </li>
+
+              <!-- Other pages: any page with `nav: true`, ordered by `nav_order` -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/projects/">Projects</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cv/">CV</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <!-- _layouts/project.html -- one entry of the _projects collection.
+     Front matter used here: title, description, venue, role and
+     links (a list of {label, url}); the body is the project write-up. -->
+<div class="post project-page">
+
+  <header class="post-header">
+    <h1 class="post-title">Thor &amp; Mjolnir</h1>
+    <p class="post-description">Cell-level analysis of spatial transcriptomics and histology, with a browser-based interface for exploring gigapixel tissue images.</p>
+    <p class="research-meta">Nature Communications, 2025 <span aria-hidden="true">·</span> Co-first author</p>
+    <div class="research-links" aria-label="Thor &amp; Mjolnir resources">
+      <a href="https://www.nature.com/articles/s41467-025-62593-1" rel="external nofollow noopener" target="_blank">Paper <span aria-hidden="true">→</span></a>
+      <a href="https://github.com/GuangyuWangLab2021/Thor" rel="external nofollow noopener" target="_blank">Code</a>
+      <a href="https://wanglab.tech/thor" rel="external nofollow noopener" target="_blank">Documentation &amp; tutorials</a>
+      <a href="https://wanglab.tech/thor/Mjolnir_video_tutorials.html" rel="external nofollow noopener" target="_blank">Mjolnir video tutorials</a>
+    </div>
+  </header>
+
+  <article>
+    <p class="research-lead">Thor infers single-cell spatial transcriptomes from spot-level data by combining gene expression with cell morphology. Mjolnir, its web interface, lets you explore the result on the full-resolution slide without writing code.</p>
+
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/projects/thor_workflow-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/projects/thor_workflow-800.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/projects/thor_workflow.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Thor workflow: histology and genomics build a cell graph, heterogeneous spots are corrected with homogeneous spots, and a transition matrix drives the anti-shrinking Markov diffusion model" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture><figcaption class="caption">Thor builds a cell graph from histology and genomics, then runs an anti-shrinking Markov diffusion that corrects heterogeneous spots with their homogeneous neighbours to produce in silico single-cell profiles.</figcaption>
+
+</figure>
+
+<h2 id="what-thor-does">What Thor does</h2>
+
+<ul>
+  <li>Infers a single-cell spatial transcriptome from spot-based data such as Visium, without a separate single-cell reference.</li>
+  <li>Ships 10 modular analysis tools, including pathway enrichment, transcription-factor activity, tissue immune microenvironment, copy-number variation, differential expression and spatially expressed module detection. Outputs plug into standard single-cell software.</li>
+  <li>Validated on simulated data and on ISH, MERFISH, Xenium and Stereo-seq platforms, and extended to Visium HD, where it sharpens spatial gene patterns to match histology.</li>
+  <li>Applied to regenerative signatures in heart failure, hallmark screening and CNV-based tumour mapping in ductal carcinoma in situ, fine layers of the mouse olfactory bulb, and annotation of fibrotic heart tissue.</li>
+</ul>
+
+<h2 id="mjolnir-in-action">Mjolnir in action</h2>
+
+<p>Mjolnir is Thor’s web interface: a viewer for whole-slide images with Thor’s outputs overlaid, built for pathologists and biologists who want to inspect results interactively.</p>
+
+<figure class="video-figure">
+  <video controls="" preload="none" playsinline="" width="1280" height="720" poster="/assets/img/projects/thor_mjolnir_gene_expression_poster.jpg" aria-label="Mjolnir: visualization of gene expression at spot and cell level">
+    <source src="/assets/video/thor_mjolnir_gene_expression.mp4" type="video/mp4"></source>
+    Your browser cannot play embedded video. <a href="/assets/video/thor_mjolnir_gene_expression.mp4">Download the video</a> instead.
+  </video>
+  <figcaption class="caption"><strong>Gene expression at spot and cell level.</strong> Upload an H&amp;E slide with spot- or cell-level data, pick a gene, set the colour range, then draw a region to get its expression histogram and summary statistics. Breast cancer sample with 76,320 cells. 2 min 55 s.</figcaption>
+</figure>
+
+<figure class="video-figure">
+  <video controls="" preload="none" playsinline="" width="1280" height="720" poster="/assets/img/projects/thor_mjolnir_cell_annotation_poster.jpg" aria-label="Mjolnir: semi-supervised annotation of cells">
+    <source src="/assets/video/thor_mjolnir_cell_annotation.mp4" type="video/mp4"></source>
+    Your browser cannot play embedded video. <a href="/assets/video/thor_mjolnir_cell_annotation.mp4">Download the video</a> instead.
+  </video>
+  <figcaption class="caption"><strong>Semi-supervised annotation of cells.</strong> Check Thor's cell detection on the slide, select a few cells of interest, and let Mjolnir locate similar cells across the whole tissue. 45 s.</figcaption>
+</figure>
+
+<h2 id="my-contributions">My contributions</h2>
+
+<p>Co-first author. I led the downstream application design and analysis: CNV-based tumor mapping in ductal carcinoma in situ and the identification of vascular PLA2G2A enrichment in post-LVAD heart tissue. I performed the data analyses with co-authors and co-wrote the manuscript.</p>
+
+  </article>
+
+  <p class="project-back"><a href="/projects/">← All projects</a></p>
+</div>
+
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
+        © Copyright 2026 Weiqing Chen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+Last updated: October 28, 2026.
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
