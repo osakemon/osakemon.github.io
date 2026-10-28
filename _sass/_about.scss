@@ -1,5 +1,8 @@
-// Research overview on the home page, using the existing light/dark palette.
-.about-page {
+// Research overview on the home page and the project pages, using the
+// existing light/dark palette.
+.about-page,
+.project-page,
+.cv-page {
   .research-focus {
     color: var(--global-theme-color);
     font-size: 1rem;
@@ -102,9 +105,229 @@
     margin-bottom: 2.5rem;
   }
 
+  // "At a glance" numbers under the bio
+  .about-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem 1.5rem;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0 0 1rem;
+    border-top: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+
+    li {
+      font-size: 0.85rem;
+      line-height: 1.35;
+      color: var(--global-text-color-light);
+    }
+
+    strong {
+      display: block;
+      font-size: 1.45rem;
+      font-weight: 500;
+      color: var(--global-text-color);
+    }
+  }
+
+  .research-project h3 a {
+    color: inherit;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+
+  // Still image on a home-page research card, linking to the project page
+  .research-media {
+    display: block;
+    margin: 0.75rem 0 1rem;
+
+    figure {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      border: 1px solid var(--global-divider-color);
+      background: #fff;
+    }
+  }
+
+  // Self-hosted demo videos (_includes/video.html)
+  .video-figure {
+    margin: 0.75rem 0 1.25rem;
+
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      background: #000;
+    }
+
+    .caption {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  // Toolbox (_includes/skills.html)
+  .research-skills {
+    margin-bottom: 2.5rem;
+
+    dl {
+      margin: 0;
+    }
+
+    dl > div {
+      display: grid;
+      grid-template-columns: 9.5rem 1fr;
+      gap: 0.25rem 1rem;
+      padding: 0.6rem 0;
+      border-top: 1px solid var(--global-divider-color);
+    }
+
+    dt {
+      font-weight: 500;
+      color: var(--global-theme-color);
+    }
+
+    dd {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 575.98px) {
+      dl > div {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  // Project pages
+  &.project-page {
+    .post-description {
+      margin-bottom: 0.5rem;
+    }
+
+    .research-links {
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+    }
+
+    figure {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .project-back {
+    margin: 2rem 0 1rem;
+    font-size: 0.95rem;
+  }
+
   a:focus-visible {
     outline: 2px solid var(--global-theme-color);
     outline-offset: 4px;
+  }
+
+  // CV page (_pages/cv.md)
+  .cv-actions {
+    margin-bottom: 0.25rem;
+  }
+
+  .cv-updated {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 1.5rem;
+  }
+
+  &.cv-page h2 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .cv-entry {
+    margin-bottom: 1.25rem;
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.25rem 1rem;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .cv-dates {
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .cv-role {
+      font-style: italic;
+      margin: 0.15rem 0 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  .cv-skills {
+    margin: 0;
+
+    > div {
+      display: grid;
+      grid-template-columns: 11rem 1fr;
+      gap: 0.25rem 1rem;
+      padding: 0.6rem 0;
+      border-top: 1px solid var(--global-divider-color);
+    }
+
+    dt {
+      font-weight: 500;
+      color: var(--global-theme-color);
+    }
+
+    dd {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+  }
+
+  .cv-note {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+  }
+
+  .cv-list {
+    padding-left: 1.2rem;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
   }
 
   @media (max-width: 575.98px) {
@@ -112,6 +335,14 @@
       width: 28%;
       max-width: 130px;
       margin-bottom: 0.5rem;
+    }
+
+    .about-facts {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cv-skills > div {
+      grid-template-columns: 1fr;
     }
 
     .research-lead {

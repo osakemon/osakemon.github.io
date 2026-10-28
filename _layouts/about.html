@@ -44,9 +44,18 @@ layout: default
             {{ content }}
           </div>
 
-          {% if page.research_highlights %}
+          <!-- At a glance: numbers from the front matter `facts` list -->
+          {% if page.facts %}
+          <ul class="about-facts" aria-label="At a glance">
+            {%- for fact in page.facts %}
+            <li><strong>{{ fact.value }}</strong> <span>{{ fact.label }}</span></li>
+            {%- endfor %}
+          </ul>
+          {% endif %}
+
+          {% if page.opportunities %}
           <aside class="research-opportunities" aria-label="Research opportunities">
-            <p><strong>Open to industry research opportunities</strong> in AI for Science and biomedical AI</p>
+            <p><strong>{{ page.opportunities.headline }}</strong>{% if page.opportunities.detail %} {{ page.opportunities.detail }}{% endif %}</p>
             <div class="research-links" aria-label="Contact and research profiles">
               <a href="mailto:{{ site.email | encode_email }}">Email me <span aria-hidden="true">&rarr;</span></a>
               {% if site.linkedin_username %}
@@ -54,10 +63,19 @@ layout: default
               {% endif %}
               <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar</a>
               <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+              <a href="{{ '/cv/' | relative_url }}">CV</a>
+              <a href="{{ '/projects/' | relative_url }}">Projects</a>
               <a href="{{ '/publications/' | relative_url }}">Publications</a>
             </div>
           </aside>
+          {% endif %}
+
+          {% if page.research_highlights %}
           {% include research_highlights.html %}
+          {% endif %}
+
+          {% if page.skills %}
+          {% include skills.html %}
           {% endif %}
 
           <!-- News: only the most recent few; the rest live at /news/ -->

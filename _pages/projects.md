@@ -2,10 +2,9 @@
 layout: page
 title: Projects
 permalink: /projects/
-description:
-nav: false
-nav_order: 2
-display_categories: [work, fun]
+description: Research projects I contributed to. Each page has the paper, code, figures and demos.
+nav: true
+nav_order: 1
 horizontal: false
 ---
 

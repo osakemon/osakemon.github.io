@@ -10,5 +10,13 @@ vendor
 
 # Private scratch space. Anything Jekyll does not recognise at the top level is
 # copied verbatim into _site and served publicly, so keep working documents
-# (resumes, drafts) both untracked here and excluded in _config.yml.
+# (CV drafts, notes) both untracked here and excluded in _config.yml. The
+# published CV is assets/pdf/CV-WeiqingChen.pdf.
 cv_work/
+
+# Full-resolution video masters. The site serves the re-encoded 720p copies in
+# assets/video/; keep the 40-70 MB originals here, untracked and unpublished.
+_video_src/
+
+# Private job-search notes and scripts; never commit or publish.
+.codex_work/

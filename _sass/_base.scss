@@ -354,20 +354,77 @@ footer.sticky-bottom {
 
 // Projects
 
+// Equal-sized cards: a CSS grid stretches every card in a row to the same
+// height, and thumbnails are cropped to a fixed 4:3 box with object-fit.
 .projects {
   a {
     text-decoration: none;
+  }
 
-    &:hover {
-      .card-title {
-        color: var(--global-theme-color);
-      }
-    }
+  // Whole card is the link target via .stretched-link on the title; the
+  // GitHub icon sits above that overlay so it stays clickable on its own.
+  .card:hover .card-title a {
+    color: var(--global-theme-color);
+  }
+
+  .card-title a {
+    color: var(--global-text-color);
+  }
+
+  .card-aux-link {
+    position: relative;
+    z-index: 2;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .grid-item {
+    min-width: 0;
   }
 
   .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    figure {
+      margin: 0;
+      max-width: none;
+    }
+
     img {
+      display: block;
       width: 100%;
+      max-width: none;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #fff;
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 1rem;
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+
+    > .row {
+      margin-top: auto;
     }
   }
 
@@ -379,12 +436,6 @@ footer.sticky-bottom {
       display: flex;
       align-items: center;
     }
-  }
-
-  .grid-sizer,
-  .grid-item {
-    width: 250px;
-    margin-bottom: 10px;
   }
 
   h2.category {

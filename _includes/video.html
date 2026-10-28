@@ -1,0 +1,26 @@
+{%- comment -%}
+  Self-hosted demo video.
+
+  Parameters:
+    path    - file name under /assets/video/, e.g. "thor_mjolnir_gene_expression.mp4"
+    poster  - still image under /assets/img/, e.g. "projects/thor_poster.jpg"
+    label   - accessible name for the player
+    caption - optional figcaption text (may contain HTML)
+
+  preload="none" means only the poster is fetched until the visitor presses
+  play, so a page can carry several videos without slowing its first load.
+  Source files are re-encoded to 720p H.264 before they go in assets/video/;
+  the originals stay in _video_src/, which is git-ignored and not published.
+{%- endcomment -%}
+{%- assign video_url = include.path | prepend: '/assets/video/' | relative_url -%}
+<figure class="video-figure">
+  <video controls preload="none" playsinline width="1280" height="720"
+         {% if include.poster %}poster="{{ include.poster | prepend: '/assets/img/' | relative_url }}"{% endif %}
+         {% if include.label %}aria-label="{{ include.label }}"{% endif %}>
+    <source src="{{ video_url }}" type="video/mp4">
+    Your browser cannot play embedded video. <a href="{{ video_url }}">Download the video</a> instead.
+  </video>
+  {%- if include.caption %}
+  <figcaption class="caption">{{ include.caption }}</figcaption>
+  {%- endif %}
+</figure>
