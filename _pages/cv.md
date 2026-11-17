@@ -117,7 +117,7 @@ Machine-learning researcher developing multimodal foundation models and research
 
 <p class="cv-note">*Co-first authors. The <a href="{{ '/publications/' | relative_url }}">publications page</a> has links to every paper.</p>
 
-1. **W. Chen\***, Q. Li\*, H. Cheng\*, et al. A single-cell pathology foundation model for molecular decoding of H&E images. Under revision in **Nature**, third round.
+1. **W. Chen\***, Q. Li\*, H. Cheng\*, et al. A biologically interpretable single-cell pathology foundation model for molecular decoding of H&E images. **bioRxiv** preprint, 2026. [Preprint](https://www.biorxiv.org/content/10.64898/2026.11.14.766416v1)
 2. **W. Chen\***, P. Zhang\*, et al. A visual-omics foundation model to bridge histopathology with spatial transcriptomics. **Nature Methods**, 2025. [Paper](https://www.nature.com/articles/s41592-025-02707-1)
 3. P. Zhang\*, **W. Chen\***, et al. Thor: a platform for cell-level investigation of spatial transcriptomics and histology. **Nature Communications**, 2025. [Paper](https://www.nature.com/articles/s41467-025-62593-1)
 4. S. Kotla\*, J. Lee\*, K. A. Ko\*, **W. Chen\***, et al. LATS1/2-CD38 metabolic rewiring links senescence to intraplaque thrombosis. **Circulation Research**, 2026. [Paper](https://www.ahajournals.org/doi/full/10.1161/CIRCRESAHA.125.327427)
