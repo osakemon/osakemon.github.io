@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle: <a href='https://weill.cornell.edu'>Weill Cornell Medicine</a> & <a href='https://www.houstonmethodist.org'>Houston Methodist</a>, Houston, Texas, United States
-research_focus: Multimodal Biomedicine AI
+research_focus: Multimodal AI for Biomedicine
 profile:
   align: right
   image: prof_pic.jpg
