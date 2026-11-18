@@ -39,6 +39,10 @@ a,
 table.table a {
   color: var(--global-theme-color);
 
+  > em {
+    color: inherit;
+  }
+
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
