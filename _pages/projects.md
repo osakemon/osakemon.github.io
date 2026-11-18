@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Research projects I contributed to. Each page has the paper, code, figures and demos.
+description: Selected work in computational pathology, spatial transcriptomics, and cell dynamics.
 nav: true
 nav_order: 1
 horizontal: false
