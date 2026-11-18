@@ -156,6 +156,21 @@
   <article>
     <p>Which molecular features of a cell can we infer from its appearance in a routine H&amp;E stain? We trained Loki2 on <strong>UniSeg</strong>, a collection of 15 million cells across tissues that pairs cell segmentations and lineage annotations with measured or histology-inferred gene expression profiles.</p>
 
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/projects/loki2_figure1-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/projects/loki2_figure1-800.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/projects/loki2_figure1.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" alt="Figure 1 of the Loki2 preprint, showing UniSeg, model training, and downstream analyses" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture><figcaption class="caption">Figure 1 from the bioRxiv preprint shows how UniSeg was assembled, how Loki2 was trained, and how its cell representations were evaluated.</figcaption>
+
+</figure>
+
 <h2 id="what-cell-morphology-reveals">What cell morphology reveals</h2>
 
 <p>We compared the features Loki2 learned with nuclear measurements from DAPI staining. Some features tracked visible differences in nuclear morphology, providing a biological interpretation for individual dimensions of the model’s representation.</p>

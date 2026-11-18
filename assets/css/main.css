@@ -403,6 +403,9 @@ footer.sticky-bottom {
   object-fit: cover;
   background: #fff;
 }
+.projects .card img.project-thumbnail-contain {
+  object-fit: contain;
+}
 .projects .card-body {
   display: flex;
   flex-direction: column;
@@ -903,6 +906,11 @@ pre:active .copy, pre:focus .copy, pre:hover .copy {
 .cv-page .research-media {
   display: block;
   margin: 0.75rem 0 1rem;
+}
+.about-page .research-media.research-media-portrait,
+.project-page .research-media.research-media-portrait,
+.cv-page .research-media.research-media-portrait {
+  max-width: 34rem;
 }
 .about-page .research-media figure,
 .project-page .research-media figure,
