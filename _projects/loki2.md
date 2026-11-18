@@ -2,6 +2,8 @@
 layout: project
 title: Loki2
 description: A biologically interpretable single-cell pathology foundation model for molecular decoding of H&E images.
+img: /assets/img/projects/loki2_figure1.png
+img_class: project-thumbnail-contain
 importance: 0
 category: work
 venue: bioRxiv, 2026
@@ -12,6 +14,8 @@ links:
 ---
 
 Which molecular features of a cell can we infer from its appearance in a routine H&E stain? We trained Loki2 on **UniSeg**, a collection of 15 million cells across tissues that pairs cell segmentations and lineage annotations with measured or histology-inferred gene expression profiles.
+
+{% include figure.html path=page.img class="img-fluid rounded z-depth-1" zoomable=true alt="Figure 1 of the Loki2 preprint, showing UniSeg, model training, and downstream analyses" caption="Figure 1 from the bioRxiv preprint shows how UniSeg was assembled, how Loki2 was trained, and how its cell representations were evaluated." %}
 
 ## What cell morphology reveals
 

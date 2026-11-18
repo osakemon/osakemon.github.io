@@ -144,6 +144,10 @@
     display: block;
     margin: 0.75rem 0 1rem;
 
+    &.research-media-portrait {
+      max-width: 34rem;
+    }
+
     figure {
       margin: 0;
     }

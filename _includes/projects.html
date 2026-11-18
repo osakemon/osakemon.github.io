@@ -11,7 +11,7 @@
   <div class="card hoverable">
     {%- if project.img %}
     {%- capture project_thumb_alt -%}{{ project.title }} thumbnail{%- endcapture -%}
-    {%- include figure.html path=project.img alt=project_thumb_alt -%}
+    {%- include figure.html path=project.img class=project.img_class alt=project_thumb_alt -%}
     {%- endif %}
     <div class="card-body">
       <h2 class="card-title"><a class="stretched-link" href="{{ project_link }}">{{ project.title }}</a></h2>
