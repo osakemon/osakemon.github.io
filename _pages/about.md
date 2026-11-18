@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle: <a href='https://weill.cornell.edu'>Weill Cornell Medicine</a> & <a href='https://www.houstonmethodist.org'>Houston Methodist</a>, Houston, Texas, United States
-research_focus: Machine Learning Researcher · Multimodal AI & Computational Biology
+research_focus: Multimodal Biomedicine AI
 profile:
   align: right
   image: prof_pic.jpg
@@ -23,10 +23,8 @@ selected_papers: false # the complete bibliography remains at /publications/
 social: false # includes social icons at the bottom of the page
 ---
 
-<p class="research-lead">I build multimodal foundation models and research tools that connect tissue morphology with molecular measurements, and release them as open-source software.</p>
+I am a **fifth-year PhD candidate** in Physiology, Biophysics and Systems Biology at [Weill Cornell Medicine](https://weill.cornell.edu) and a visiting graduate research fellow at [Houston Methodist Research Institute](https://www.houstonmethodist.org), advised by [Dr. Guangyu Wang](https://guangyuwanglab.github.io/web/). I expect to complete my PhD in **early 2027**. I build multimodal foundation models and research tools that connect tissue morphology with molecular measurements, and release them as open-source software.
 
-I am a **fifth-year PhD candidate** in Physiology, Biophysics and Systems Biology at [Weill Cornell Medicine](https://weill.cornell.edu) and a visiting graduate research fellow at [Houston Methodist Research Institute](https://www.houstonmethodist.org), advised by [Dr. Guangyu Wang](https://guangyuwanglab.github.io/web/). I expect to complete my PhD in **early 2027**. I combine **histology with single-cell and spatial transcriptomics** to map gene expression within tissues, use **RNA velocity** to model how cells change state, and integrate **multi-omics data** to study cancer and cardiovascular disease.
-
-I led **OmiCLIP**, a visual–omics foundation model, and its platform **Loki** end to end: model design, curation of 2.2 million image–transcriptomics pairs from 1,007 tissue samples, training and evaluation, downstream applications, and open-source release with documentation and tutorials. My [first-author preprint](https://www.biorxiv.org/content/10.64898/2026.11.14.766416v1) introduces **Loki2**, a biologically interpretable pathology foundation model that links the morphology of individual cells in H&E images to gene expression and protein staining patterns.
+I led the end-to-end development of **OmiCLIP**, a visual–omics foundation model, and its platform **Loki** ([*Nature Methods*, 2025](https://www.nature.com/articles/s41592-025-02707-1)). This included model design, curation of 2.2 million image–transcriptomics pairs from 1,007 tissue samples, training and evaluation, downstream applications, and open-source release with documentation and tutorials. My [first-author preprint](https://www.biorxiv.org/content/10.64898/2026.11.14.766416v1) introduces **Loki2**, a biologically interpretable pathology foundation model that links the morphology of individual cells in H&E images to gene expression and protein staining patterns.
 
 Before my PhD I developed a Bayesian active-inference framework for goal-directed cell migration with [Dr. Naoki Honda](https://sites.google.com/view/data-driven-biology/) during my master's at [Kyoto University](https://www.kyoto-u.ac.jp/en), and I hold a bachelor's degree in Computer Science and Technology from [Nanjing University of Posts and Telecommunications](https://www.njupt.edu.cn/en/).
