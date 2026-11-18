@@ -28,6 +28,10 @@ jobs:
       with:
         ruby-version: '3.2'
         bundler-cache: true
+    - name: Install ImageMagick for responsive images
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y imagemagick
     - name: Build 🔧
       run: bundle exec jekyll build
     - name: Deploy 🚀
