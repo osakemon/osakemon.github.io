@@ -117,6 +117,10 @@ a,
 table.table a {
   color: var(--global-theme-color);
 }
+a > em,
+table.table a > em {
+  color: inherit;
+}
 a:hover,
 table.table a:hover {
   color: var(--global-theme-color);
